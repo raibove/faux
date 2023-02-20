@@ -1,6 +1,8 @@
 import { useState } from "react";
 import {CirclePicker} from "react-color";
 import DrawingPanel from "./DrawingPanel";
+import "./Editor.css";
+
 function Editor(){
     const [panelWidth, setPanelWidth] = useState(16);
     const [panelHeight, setPanelHeight] = useState(16);
@@ -19,6 +21,11 @@ function Editor(){
                 height={panelHeight}
                 selectedColor={selectedColor}
             />
+            <div>
+                <button className="button">
+                    Save
+                </button>
+            </div>
         </div>
     )
 }
