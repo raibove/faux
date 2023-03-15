@@ -1,3 +1,10 @@
+.container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
 .button {
     border-radius: 8px;
     border: 1px solid transparent;

@@ -14,18 +14,14 @@ function Editor(){
     }
 
     return(
-        <div>
+        <div className="container">
             <CirclePicker color={selectedColor} onChangeComplete={changeColor} />
             <DrawingPanel
                 width={panelWidth}
                 height={panelHeight}
                 selectedColor={selectedColor}
             />
-            <div>
-                <button className="button">
-                    Save
-                </button>
-            </div>
+            
         </div>
     )
 }
